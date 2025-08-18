@@ -63,7 +63,8 @@ jobs:
               body: `### 🧪 Test Results (${process.env.MODULE}):\n\n\`\`\`\n${lastLines}\n\`\`\``
             });
 
-      - name: Notify Thinkific if all tests passed and mark course as completed
+      #8. Update Thinkific if all tests passed and mark course as completed 
+      - name: Update Thinkific if all tests passed
         if: success()
         run: |
           # 1. Fetch Thinkific user_id by email or GitHub username
