@@ -23,12 +23,12 @@
 </ol>
 </details>
 <details>
-<summary> <a href="#module-2-testing-smart-contracts">Module 2: Testing Smart Contracts</a></summary>
+<summary> <a href="#module-3-testing-smart-contracts">Module 3: Testing Smart Contracts</a></summary>
 <ol>
-  <li><a href="#module-2-overview">Overview</a></li>
-  <li><a href="#module-2-exercises">Exercises</a></li>
-  <li><a href="#module-2-running-tests">Running Tests</a></li>
-  <li><a href="#module-2-submission-guidelines">Submission Guidelines</a></li>
+  <li><a href="#module-3-overview">Overview</a></li>
+  <li><a href="#module-3-exercises">Exercises</a></li>
+  <li><a href="#module-3-running-tests">Running Tests</a></li>
+  <li><a href="#module-3-submission-guidelines">Submission Guidelines</a></li>
 </ol>
 </details>
 
@@ -100,7 +100,7 @@ Before starting the course, ensure you have:
 
 3. **Navigate to Desired Module Folder** and install dependencies:
    ```bash
-   cd module1 #(module1 for example)
+   cd module2 #(module2 for example)
    npm install
    ```
 
@@ -109,7 +109,7 @@ Before starting the course, ensure you have:
    npx hardhat test
    ```
 
-You should see tests running (they will fail initially - that's expected!).
+You should see tests running (they will fail initially - that's expected!). Take in account each module has different exercises and tests, and ways to run the tests.
 
 ## How to Submit Your Work
 
@@ -126,29 +126,29 @@ You should see tests running (they will fail initially - that's expected!).
 **Important**: Your Pull Request must follow this naming convention:
 
 ```
-module[número]/[usuario-o-correo]
+module[number]/[username-or-email]
 ```
 
 **Examples**:
-- `module1/your-username` (using course username)
-- `module1/student@email.com` (using email)
-- `module2/your-username` (for Module 2)
+- `module2/your-username` (using course username)
+- `module2/student@email.com` (using email)
+- `module3/your-username` (for Module 3)
 
 **Steps to create your PR**:
 
 ```bash
 # Create a branch with the correct naming format
-git checkout -b module1/your-username
+git checkout -b module2/your-username
 
 # Commit your changes
 git add .
-git commit -m "Complete Module 1 exercises"
+git commit -m "Complete Module 2 exercises"
 
 # Push your branch to your fork
-git push origin module1/your-username
+git push origin module2/your-username
 
 # Create a PR on GitHub from your fork to the parent repository
-# Make sure the PR title follows the same format: module1/your-username
+# Make sure the PR title follows the same format: module2/your-username
 ```
 
 ### What Happens Next?
@@ -163,19 +163,19 @@ git push origin module1/your-username
 
 ---
 
-# Module 1: Solidity Fundamentals
+# Module 2: Solidity Fundamentals
 
 💡 **Learning Time**: 4-6 hours  
 📹 **Video Lessons**: Available on the platform  
 🎯 **Goal**: Master core Solidity concepts through hands-on coding
 
-## Module 1 Overview
+## Module 2 Overview
 
-In Module 1, you'll learn the fundamental building blocks of Solidity smart contracts through 13 progressive exercises. Each exercise builds on the previous one, taking you from basic contract structure to advanced concepts like interfaces and imports.
+In Module 2, you'll learn the fundamental building blocks of Solidity smart contracts through 13 progressive exercises. Each exercise builds on the previous one, taking you from basic contract structure to advanced concepts like interfaces and imports.
 
 ### What You'll Build
 
-You'll build a **Car Registry Smart Contract** that demonstrates:
+You'll build a **Cars Smart Contract** that demonstrates:
 - Contract structure and state management
 - Data types (primitives, enums, structs)
 - Functions with parameters and return values
@@ -187,25 +187,25 @@ You'll build a **Car Registry Smart Contract** that demonstrates:
 
 | # | Exercise | Concepts | Difficulty |
 |---|----------|----------|------------|
-| 01 | [Contract Structure](./module1/ContractsTemplate/01-contract.sol) | `pragma`, `contract`, `constructor` | ⭐ |
-| 02 | [Primitive Variables](./module1/ContractsTemplate/02-primitive-variables.sol) | `bool`, `uint256`, `address`, `public` | ⭐ |
-| 03 | [Enumerations](./module1/ContractsTemplate/03-enum.sol) | `enum`, custom types | ⭐ |
-| 04 | [Structures](./module1/ContractsTemplate/04-struct.sol) | `struct`, composite types | ⭐⭐ |
-| 05 | [Dynamic Variables](./module1/ContractsTemplate/05-dynamic-variables.sol) | `mapping`, key-value storage | ⭐⭐ |
-| 06 | [Function Signatures](./module1/ContractsTemplate/06-function-stub.sol) | function declarations, parameters | ⭐⭐ |
-| 07 | [Function Implementation](./module1/ContractsTemplate/07-function-impl.sol) | `memory`, `msg.sender`, logic | ⭐⭐ |
-| 08 | [Require Statements](./module1/ContractsTemplate/08-require.sol) | `payable`, `require`, validation | ⭐⭐⭐ |
-| 09 | [Function Modifiers](./module1/ContractsTemplate/09-function-modifier.sol) | `modifier`, `_`, reusable checks | ⭐⭐⭐ |
-| 10 | [Events & Logs](./module1/ContractsTemplate/10-event-logs.sol) | `event`, `emit`, `indexed` | ⭐⭐⭐ |
-| 11 | [Interfaces](./module1/ContractsTemplate/11-interface.sol) | `interface`, `external`, `is` | ⭐⭐⭐⭐ |
-| 12 | [Interface References](./module1/ContractsTemplate/12-reference-interface.sol) | contract references, casting | ⭐⭐⭐⭐ |
-| 13 | [Imports](./module1/ContractsTemplate/13-import.sol) | `import`, modular code | ⭐⭐⭐⭐ |
+| 01 | [Contract Structure](./module2/ContractsTemplate/01-contract.sol) | `pragma`, `contract`, `constructor` | ⭐ |
+| 02 | [Primitive Variables](./module2/ContractsTemplate/02-primitive-variables.sol) | `bool`, `uint256`, `address`, `public` | �0 |
+| 03 | [Enumerations](./module2/ContractsTemplate/03-enum.sol) | `enum`, custom types | ⭐ |
+| 04 | [Structures](./module2/ContractsTemplate/04-struct.sol) | `struct`, composite types | ⭐⭐ |
+| 05 | [Dynamic Variables](./module2/ContractsTemplate/05-dynamic-variables.sol) | `mapping`, key-value storage | ⭐⭐ |
+| 06 | [Function Signatures](./module2/ContractsTemplate/06-function-stub.sol) | function declarations, parameters | ⭐⭐ |
+| 07 | [Function Implementation](./module2/ContractsTemplate/07-function-impl.sol) | `memory`, `msg.sender`, logic | ⭐⭐ |
+| 08 | [Require Statements](./module2/ContractsTemplate/08-require.sol) | `payable`, `require`, validation | ⭐⭐⭐ |
+| 09 | [Function Modifiers](./module2/ContractsTemplate/09-function-modifier.sol) | `modifier`, `_`, reusable checks | ⭐⭐⭐ |
+| 10 | [Events & Logs](./module2/ContractsTemplate/10-event-logs.sol) | `event`, `emit`, `indexed` | ⭐⭐⭐ |
+| 11 | [Interfaces](./module2/ContractsTemplate/11-interface.sol) | `interface`, `external`, `is` | ⭐⭐⭐⭐ |
+| 12 | [Interface References](./module2/ContractsTemplate/12-reference-interface.sol) | contract references, casting | ⭐⭐⭐⭐ |
+| 13 | [Imports](./module2/ContractsTemplate/13-import.sol) | `import`, modular code | ⭐⭐⭐⭐ |
 
 ## Running Tests
 
 ### Run All Tests
 ```bash
-cd module1
+cd module2
 npx hardhat test
 ```
 
@@ -219,16 +219,11 @@ npx hardhat test test/01-contract.ts
 npx hardhat test --verbose
 ```
 
-### Check Gas Usage
-```bash
-REPORT_GAS=true npx hardhat test
-```
-
 ## How to Complete Exercises
 
 ### Step 1: Open the Template
 
-Navigate to `module1/ContractsTemplate/` and open the exercise file. You'll see code with blanks (`___`):
+Navigate to `module2/ContractsTemplate/` and open the exercise file. You'll see code with blanks (`___`):
 
 ```solidity
 // Example from 01-contract.sol
@@ -285,21 +280,21 @@ Once all tests pass (✅), move to the next exercise!
 
 ```bash
 # 1. Create a branch following the naming convention: module1/your-username
-git checkout -b module1/your-username
+git checkout -b module2/your-username
 
 # 2. Run all tests one final time
-cd module1
+cd module2
 npx hardhat test
 
 # 3. Check for any uncommitted changes
 git status
 
 # 4. Commit your work
-git add module1/
+git add module2/
 git commit -m "Complete Module 1: Solidity Fundamentals"
 
 # 5. Push to your fork
-git push origin module1/your-username
+git push origin module2/your-username
 
 # 6. Create Pull Request on GitHub to the parent repository
 # PR title must be: module1/your-username
@@ -373,7 +368,7 @@ npm install
 
 ---
 
-# Module 2: Testing Smart Contracts
+# Module 3: Testing Smart Contracts
 
 💡 **Learning Time**: 6-8 hours  
 📹 **Video Lessons**: Available on the platform  
@@ -397,40 +392,31 @@ By completing this module, you will be able to:
 - **Cars.sol**: A contract managing a collection of cars with ownership and events
 - **CarLock.sol**: A time-locked contract for advanced testing techniques
 
-## Module 2 Exercises
+## Module 3 Exercises
 
 | # | Exercise | Topics Covered | Difficulty |
 |---|----------|----------------|------------|
-| 01 | [Basic Deployment](./module2/TestTemplates/01-basic-deployment.ts) | `getContractFactory`, `deploy`, `waitForDeployment` | ⭐ |
-| 02 | [Testing Functions](./module2/TestTemplates/02-testing-functions.ts) | Function calls, state changes, `connect()` | ⭐⭐ |
-| 03 | [Testing Events](./module2/TestTemplates/03-testing-events.ts) | `.to.emit()`, `.withArgs()`, event verification | ⭐⭐⭐ |
-| 04 | [Testing Reverts](./module2/TestTemplates/04-testing-reverts.ts) | `.to.be.revertedWith()`, error handling | ⭐⭐⭐ |
-| 05 | [Advanced Testing](./module2/TestTemplates/05-advanced-testing.ts) | Time manipulation, snapshots, balance checks | ⭐⭐⭐⭐ |
+| 01 | [Basic Deployment](./module3/TestTemplates/01-basic-deployment.ts) | `getContractFactory`, `deploy`, `waitForDeployment` | ⭐ |
+| 02 | [Testing Functions](./module3/TestTemplates/02-testing-functions.ts) | Function calls, state changes, `connect()` | ⭐⭐ |
+| 03 | [Testing Events](./module3/TestTemplates/03-testing-events.ts) | `.to.emit()`, `.withArgs()`, event verification | ⭐⭐⭐ |
+| 04 | [Testing Reverts](./module3/TestTemplates/04-testing-reverts.ts) | `.to.be.revertedWith()`, error handling | ⭐⭐⭐ |
+| 05 | [Advanced Testing](./module3/TestTemplates/05-advanced-testing.ts) | Time manipulation, snapshots, balance checks | ⭐⭐⭐⭐ |
 
-## Module 2 Running Tests
+## Module 3 Running Tests
 
 ### Compile Contracts
 ```bash
-cd module2
+cd module3
 npm run compile
 ```
 
 ### Run Your Tests
 ```bash
 # Run a specific test template you're working on
-npx hardhat test TestTemplates/01-basic-deployment.ts
+npx hardhat test test/01-basic-deployment.ts
 
 # Run all your test templates
-npx hardhat test TestTemplates/
-```
-
-### Run Validators
-```bash
-# Run all validators (for submission check)
-npm run test:validators
-
-# Run a specific validator
-npx hardhat test test-validators/validate-01-basic-deployment.ts
+npx hardhat test
 ```
 
 ### View Detailed Test Output
@@ -438,16 +424,11 @@ npx hardhat test test-validators/validate-01-basic-deployment.ts
 npx hardhat test --verbose
 ```
 
-### Check Gas Usage
-```bash
-REPORT_GAS=true npx hardhat test
-```
+## How to Complete Module 3 Exercises
 
-## How to Complete Module 2 Exercises
+### Step 1: Open the Test File
 
-### Step 1: Open the Test Template
-
-Navigate to `module2/TestTemplates/` and open the exercise file. You'll see test code with blanks (`___`):
+Navigate to `module3/test/` and open the test file. You'll see test code with blanks (`___`):
 
 ```typescript
 // Example from 01-basic-deployment.ts
@@ -481,7 +462,7 @@ it("should deploy the Cars contract successfully", async function () {
 Run the test file to verify your solution:
 
 ```bash
-npx hardhat test TestTemplates/01-basic-deployment.ts
+npx hardhat test test/01-basic-deployment.ts
 ```
 
 ### Step 4: Fix Any Errors
@@ -491,25 +472,16 @@ If tests fail, read the error messages carefully:
 - ❌ **Assertion errors**: Verify your expect statements
 - ❌ **Compilation errors**: Ensure contracts compile first
 
-### Step 5: Run Validators
+### Step 5: Move to the Next Exercise
 
-Once your tests pass, verify with the validators:
+Once all tests pass (✅), move to the next exercise!
 
-```bash
-npx hardhat test test-validators/validate-01-basic-deployment.ts
-```
-
-### Step 6: Move to the Next Exercise
-
-Once all tests and validators pass (✅), move to the next exercise!
-
-## Module 2 Submission Guidelines
+## Module 3 Submission Guidelines
 
 ### Before Submitting
 
-- ✅ All test templates completed
+- ✅ All tests completed
 - ✅ All tests pass when run
-- ✅ All validators pass
 - ✅ No syntax errors
 - ✅ Code follows testing best practices
 
@@ -517,21 +489,21 @@ Once all tests and validators pass (✅), move to the next exercise!
 
 ```bash
 # 1. Create a branch following the naming convention: module2/your-username
-git checkout -b module2/your-username
+git checkout -b module3/your-username
 
 # 2. Run all tests one final time
-cd module2
-npm run test:validators
+cd module3
+npm run test
 
 # 3. Check for any uncommitted changes
 git status
 
 # 4. Commit your work
-git add module2/
-git commit -m "Complete Module 2: Testing Smart Contracts"
+git add module3/
+git commit -m "Complete Module 3: Testing Smart Contracts"
 
 # 5. Push to your fork
-git push origin module2/your-username
+git push origin module3/your-username
 
 # 6. Create Pull Request on GitHub to the parent repository
 # PR title must be: module2/your-username
@@ -547,36 +519,14 @@ Your submission will be evaluated on:
 3. **Test Quality**: Proper use of assertions and patterns
 4. **Best Practices**: Uses `beforeEach`, proper test structure, etc.
 
-## Ethers.js Quick Reference
-
-### Essential Methods
-
-**Contract Deployment:**
-- `ethers.getContractFactory(name)` - Get contract factory
-- `factory.deploy(...args)` - Deploy contract
-- `contract.waitForDeployment()` - Wait for deployment
-- `contract.getAddress()` - Get deployed address
-
-**Testing Helpers:**
-- `ethers.getSigners()` - Get test accounts
-- `contract.connect(signer)` - Use different account
-- `ethers.parseEther(value)` - Convert ETH string to wei
-
-**Chai Matchers:**
-- `.to.equal(value)` - Exact equality
-- `.to.be.a(type)` - Type checking
-- `.to.emit(contract, event)` - Event emission
-- `.withArgs(...args)` - Event arguments
-- `.to.be.revertedWith(message)` - Revert checking
-
 ## Module 2 Tips for Success
 
 ### 📚 Learning Resources
 
 - **Watch the video lessons** before starting exercises
-- **Read the module README** in `module2/README.md` for detailed explanations
+- **Read the module README** in `module3/README.md` for detailed explanations
 - **Review Ethers.js documentation** when stuck
-- **Study the reference solutions** in `module2/test/` for comparison
+- **Study the reference solutions** in `module3/test/` for comparison
 
 ### 💡 Common Mistakes to Avoid
 
@@ -593,7 +543,7 @@ Your submission will be evaluated on:
 - Compare with simpler examples before tackling advanced exercises
 - Use `beforeEach` to avoid repeating setup code
 
-## Module 2 Troubleshooting
+## Module 3 Troubleshooting
 
 ### Tests Won't Run
 
@@ -619,13 +569,12 @@ npm run compile
 - Verify you're using the correct Ethers.js v6 syntax
 - Check that all async operations are awaited
 - Ensure contract methods are called correctly
-- Review the validator output for specific requirements
 
 ### Need More Help?
 
 - Check the [Hardhat Documentation](https://hardhat.org/docs)
 - Review [Ethers.js v6 Documentation](https://docs.ethers.org/)
-- Review the module-specific README: `module2/README.md`
+- Review the module-specific README: `module3/README.md`
 - Ask in the course discussion forum
 - Reach out to the DevX team
 
